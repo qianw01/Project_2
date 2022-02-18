@@ -4,37 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
-    <TextView
-        android:id="@+id/welcome_message"
+    <EditText
+        android:id="@+id/usernameLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="136dp"
-        android:layout_marginTop="76dp"
-        android:text="Willkommen!"
-        android:textSize="24sp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="230dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/registerBtn"
+    <EditText
+        android:id="@+id/passLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="141dp"
-        android:text="Register"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_message" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameLog" />
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/logSubmitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="97dp"
-        android:text="Login"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="61dp"
+        android:text="Submit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
-
+        app:layout_constraintTop_toBottomOf="@+id/passLog" />
 </androidx.constraintlayout.widget.ConstraintLayout>
