@@ -10,6 +10,8 @@
         android:id="@+id/diaryTextInput"
         android:layout_width="316dp"
         android:layout_height="174dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="71dp"
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
@@ -17,17 +19,8 @@
         android:scrollHorizontally="false"
         android:text="not"
         android:verticalScrollbarPosition="defaultPosition"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="71dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="exercise"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/diaryCheckText"
@@ -39,6 +32,17 @@
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/diaryTextInput" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:text="exercise"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diaryCheckText" />
 
     <CheckBox
         android:id="@+id/checkBox2"
